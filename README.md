@@ -96,7 +96,7 @@ If CUDA is available, choose GPU embeddings for the current PowerShell session:
 $env:EMBED_DEVICE = 'cuda'
 ```
 
-Otherwise omit the variable (defaults to CPU), or use `$env:EMBED_DEVICE = 'cpu'`.
+Otherwise, omit the variable (defaults to CPU), or use `$env: EMBED_DEVICE = 'cpu'`.
 
 ## Run the Python CLI
 
@@ -169,7 +169,7 @@ API routes:
 
 Optional local persistent Qdrant storage can be enabled via `QDRANT_PATH`. Without it, the collection is in memory and recreated each run.
 
-## Educational datasets and scope
+##  Datasets and scope
 
 The built-in documents are **fictional examples** (e.g., subscription rates, export limits, and security statements). They are not verified facts about any actual company. The reported metrics are local demo statistics, not production benchmarks.
 
