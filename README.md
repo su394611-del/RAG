@@ -2,7 +2,7 @@
 
 An  multi-tenant **retrieval and extractive-answering** service built with Python, Hugging Face Sentence Transformers, Qdrant, and FastAPI. This repository includes three related Python implementations and a self-contained Jupyter notebook based on the diagnostics implementation.
 
-> **Scope:** This is a *RAG-oriented retrieval demo*, **not a fully generative RAG system**. It retrieves tenant-filtered knowledge-base passages and returns excerpts rather than calling a generative LLM. Its security filters and example organization details are illustrative, not production-grade guarantees.
+> **Scope:** This is a *RAG-oriented retrieval demo*. It retrieves tenant-filtered knowledge-base passages and returns excerpts by calling or not calling a generative LLM. Its security filters and example organization details are illustrative, not production-grade guarantees.
 
 ## Features
 
@@ -177,7 +177,7 @@ The built-in documents are **fictional examples** (e.g., subscription rates, exp
 - Regex PII rules are incomplete and US-oriented, and can miss sensitive information or generate false positives.
 - Prompt-injection checks rely on fixed patterns and are not a comprehensive defense.
 - `SemanticCache` stores entries in process memory and is separated by `tenant_id`, `session_id`, and `top_k`; it is not a distributed cache.
-- `QdrantClient(':memory:')` is suited to experiments, not durable multi-instance deployments.
+- `QdrantClient(': memory:')` is suited to experiments, not durable multi-instance deployments.
 - Rate limiting is based on client IP in this demonstration, not per-tenant billing quotas.
 - No production security review, red-team assessment, or scale/load testing is included.
 - API mode is configured for loopback access; use appropriate infrastructure/security review before any exposure to the internet.
@@ -189,7 +189,7 @@ The built-in documents are **fictional examples** (e.g., subscription rates, exp
 | `ModuleNotFoundError` | Confirm the terminal and notebook use the environment where you installed `requirements.txt` |
 | Hugging Face download error | Check internet connectivity and whether `BAAI/bge-small-en-v1.5` is already cached |
 | CUDA unavailable | Check `torch.version.cuda` and `torch.cuda.is_available()`; CPU is an acceptable fallback |
-| Out-of-memory on a 4 GB GPU | Use CPU embeddings: `$env:EMBED_DEVICE = 'cpu'` |
+| Out-of-memory on a 8 GB GPU | Use CPU embeddings: `$env:EMBED_DEVICE = 'cpu'` |
 | API reports no keys configured | Set `TENANT_A_API_KEY` or `TENANT_B_API_KEY` before `--api` |
 | Jupyter throws `ipykernel_launcher` argument error | Run the supplied `.ipynb` or use `python file.py --demo` in a terminal, not raw `main()` in a notebook |
 
