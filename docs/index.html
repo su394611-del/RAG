@@ -1,19 +1,97 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RAG - AI Engineering Project</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>
+    Multi-Tenant RAG Retrieval |
+    Python, FastAPI and Qdrant
+  </title>
+
   <meta name="description"
-        content="RAG project with Python,
-        FastAPI, Qdrant and vector search.">
+        content="Multi-tenant RAG-oriented retrieval
+        service using Python, FastAPI,
+        Qdrant, Sentence Transformers,
+        vector embeddings, semantic caching
+        and tenant-filtered document retrieval.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://su394611-del.github.io/RAG/">
 </head>
+
 <body>
-  <h1>RAG - Retrieval Augmented Generation</h1>
-  <p>Python AI project documentation.</p>
-  <a href="https://github.com/su394611-del/RAG">
-    View GitHub Repository
-  </a>
+  <header>
+    <h1>Multi-Tenant RAG Retrieval Service</h1>
+
+    <p>
+      A Python-based AI engineering project
+      demonstrating vector search, retrieval,
+      embeddings, semantic caching and
+      multi-tenant knowledge-base isolation.
+    </p>
+  </header>
+
+  <main>
+    <h2>Project Features</h2>
+    <ul>
+      <li>Python and FastAPI REST interface</li>
+      <li>Qdrant vector database</li>
+      <li>Hugging Face Sentence Transformers</li>
+      <li>BGE-small text embeddings</li>
+      <li>Tenant-filtered vector retrieval</li>
+      <li>Cosine similarity search</li>
+      <li>Semantic caching with TTL</li>
+      <li>Session and tenant cache separation</li>
+      <li>Illustrative PII redaction</li>
+      <li>Heuristic prompt-injection checks</li>
+      <li>Bearer-token API authentication</li>
+      <li>Rate limiting and request metrics</li>
+      <li>Python and Jupyter Notebook demos</li>
+      <li>CPU and optional CUDA support</li>
+    </ul>
+
+    <h2>System Architecture</h2>
+    <p>
+      Client request, tenant authentication,
+      input checks, semantic cache,
+      BGE embeddings, Qdrant vector retrieval,
+      and extractive knowledge-base results.
+    </p>
+
+    <h2>Retrieval and Embeddings</h2>
+    <p>
+      The service uses BAAI/bge-small-en-v1.5
+      embeddings and Qdrant payload filters
+      to retrieve relevant tenant-specific
+      knowledge-base passages.
+    </p>
+
+    <h2>Project Scope</h2>
+    <p>
+      This is an educational retrieval demo.
+      It returns excerpts rather than
+      LLM-generated answers. The security
+      controls are illustrative and have
+      not undergone production security review.
+    </p>
+
+    <h2>Source Code</h2>
+    <p>
+      <a href="https://github.com/su394611-del/RAG">
+        View RAG GitHub Repository
+      </a>
+    </p>
+
+    <h2>Technical Documentation</h2>
+    <p>
+      <a href="https://github.com/su394611-del/RAG/wiki">
+        View RAG GitHub Wiki
+      </a>
+    </p>
+  </main>
 </body>
 </html>
