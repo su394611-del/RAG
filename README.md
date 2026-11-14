@@ -1,8 +1,8 @@
 # Multi-Tenant RAG Service — Python, Qdrant, Sentence Transformers and FastAPI
 
-An  multi-tenant **retrieval and extractive-answering** service built with Python, Hugging Face Sentence Transformers, Qdrant, and FastAPI. This repository includes three related Python implementations and a self-contained Jupyter notebook based on the diagnostics implementation.
+An  multi-tenant **retrieval and extractive-answering** service built with Python, Hugging Face Sentence Transformers, Qdrant, and FastAPI. This repository includes three related Python implementations and a self-contained Jupyter notebook/Colab/Kaggle notebook based on the diagnostics implementation.
 
-> **Scope:** This is a *RAG-oriented retrieval demo*. It retrieves tenant-filtered knowledge-base passages and returns excerpts by calling or not calling a generative LLM. Its security filters and example organization details are illustrative, not production-grade guarantees.
+> **Scope:** This is a *RAG-oriented retrieval production garde demo*. It retrieves tenant-filtered knowledge-base passages and returns excerpts by calling or not calling a generative LLM. Its security filters and example organization details are illustrative.
 
 ## Features
 
