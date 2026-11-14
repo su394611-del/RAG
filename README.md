@@ -202,5 +202,4 @@ The built-in documents are **fictional examples** (e.g., subscription rates, exp
 - [PyTorch installation guide](https://pytorch.org/get-started/locally/)
 
 ## License
-
-No open-source license is specified in the supplied source. Add a `LICENSE` file only after choosing the terms under which you want others to use or redistribute this repository.
+This project is licensed under the Apache License, Version 2.0.© 2026 Sudhanshu Shukla · Licensed under the Apache License, Version 2.0
